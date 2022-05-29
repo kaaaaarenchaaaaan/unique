@@ -1,0 +1,771 @@
+
+
+//.top_wrapper{
+    //background-image: url(pets-3715733_640.jpg);
+   // background-position: center;
+    //background-size: cover;
+   // width: 100%;
+    //height: 100vh;
+
+   // background-image:url("../img/unique_top_fast.jpg") ;
+//}
+
+
+.iphone{
+    display: none;
+}
+@media screen and (max-width:520px) {
+
+    .pc{
+        display: none;
+    }
+    .iphone{
+        display: block;
+    }
+//共通要素クラス
+.logo_u_blue {
+    color: #0799EA;
+}
+
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+   background-size: cover;
+    background-attachment:scroll;
+   background-repeat: no-repeat;
+    background-position:  center;
+   
+    z-index: 2;
+    }
+
+
+
+
+//セクション
+.top_wrapper {
+ 
+    width: 100%;
+    background-image: url("../img/unique_top_fast.jpg");
+}
+
+
+.logo_black{
+    opacity: 1;
+    transition: 0.4;
+}
+
+.logo_white{
+    opacity: 0;
+    transition: 0.4s;
+}
+.fadein_opacity{
+    opacity: 1;
+}
+.fadeout_opacity{
+    opacity: 0;
+}
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+
+//背景をぼかす
+backdrop-filter: blur(6px);
+height: 60px;
+    h1 {
+       
+        
+        margin-left: 5%;
+        margin-top: 20px;
+        position: relative;
+        img{
+            position: absolute;
+            top:0;
+            left:0;
+            display: block;
+            
+            width: 155px;
+            height: 20.047838px;
+        }
+
+
+    }
+
+
+    .humberger_btn {
+        z-index: 11;
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #0799EA;
+        flex-direction: column;
+
+        span {
+            display: block;
+            padding-top: 20px;
+            position: absolute;
+            text-align: center;
+            width: 40%;
+            border-bottom: solid 2px rgb(255, 255, 255);
+            padding: top 10px;
+            left: 20px;
+            transition: 0.35s;
+        }
+
+        .hunbergerbtn_span_top {
+            top: 3px;
+        }
+
+
+
+        .hunbergerbtn_span_bottom {
+            top: 13px;
+
+        }
+
+
+    }
+
+    //ハンバーガーボタンのばつ印（left同士で動かす）
+    .humberger_active {
+
+
+        .hunbergerbtn_span_top {
+
+            top: 13px;
+            transform: rotate(-45deg);
+            left: 13px;
+
+        }
+
+        .hunbergerbtn_span_bottom {
+            top: 13px;
+            left: 26.5px;
+            transform: rotate(45deg);
+        }
+    }
+
+    .hunberger_menu {
+        z-index: 5;
+        width: 100%;
+        height: 100vh;
+        background-color: #0799EA;
+       // background-attachment: fixed;
+        //background-position: center;
+      //  background-size: cover;
+        //background-image: url("../img/guladeshion_back.jpg");
+     
+      
+     
+        position: absolute;
+        position: fixed;
+        top: 0;
+        right: -120%;
+        text-align: center;
+        transition: all 0.6s;
+
+        ul {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .li_menu {
+
+                margin-bottom: 40px;
+                img{
+                    margin: 0   auto;
+                    display: block;
+                   
+                }
+                .title_a{
+                    width: 100%;
+                }
+                .title_b{
+                    width: 80%;
+                }
+                .title_c{
+                    //width不明
+                    width: 30%;
+                }
+                .title_d{
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    .hunbergermenu_active {
+        right: 0;
+    }
+
+}
+
+.content {
+    opacity: 0;
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 8000px;
+    font-weight: 600;
+    position: relative;
+    transition: all 1s;
+
+
+
+}
+
+.content_active {
+    opacity: 1;
+}
+
+.content_notfixed {
+    position: static;
+    opacity: 0;
+}
+
+
+
+
+
+.filter_text {
+
+ 
+.text_out{
+
+    .filter_text_logo {
+       
+       img{
+        width: 155px;
+        height: 20.047838px;
+           margin-right: 10px;
+       }
+
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 25px;
+        line-height: 30px;
+
+    }
+}
+}
+
+.filter_text_active {
+    position: static;
+    opacity: 0;
+}
+
+.fast_white_fixed{
+display: none;
+}
+.second_white_fixed{
+    display: none;
+}
+.thired_white_fixed{
+    display: none;
+}
+.fourword_white_fixed{
+    display: none;
+}
+.icon_hide{
+    display: none;
+}
+.icon_show{
+    display: block;
+}
+
+.fixed_bottom {
+    z-index: 10;
+    color: #0799EA;
+    width: 100%;
+    position: fixed;
+    //position: relative;
+    bottom: 0;
+    display: flex;
+    margin-bottom: 10px;
+
+    .date {
+
+        display: none;
+    }
+    .under_white{
+    width: 5%;
+    position: fixed;
+    bottom:40px;
+    right:40px;
+    display: none;
+    //position: absolute;
+}
+    .scloll_icon {
+
+        padding-bottom: 30px;
+        margin: 0 auto;
+       margin-right:0px;
+        text-align: center;
+        flex-direction: column;
+
+        .scloll_text {
+            display: block;
+            font-size: 4px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+
+        }
+
+        img{
+            margin:  0  auto;
+            width: 20%;
+            display: block;
+        }
+    }
+}
+
+.business_redion {
+    overflow: hidden;
+    width: 100%;
+ 
+
+    .container {
+        padding-top: 100px;
+        padding-left: 0px;
+        padding-bottom: 80px;
+        //大画面でレスポンシブを加える大画面ウィンドウ幅でwidth:60%;下げる
+        width: 90%;
+    
+        margin: 0 auto;
+        text-align: center;
+
+        .sectionname {
+            
+           // width: 100%;
+        
+            img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 12px;
+            }
+
+        }
+
+        .sectionname_japanese {
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            font-size: 600;
+        }
+
+        .contents {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+          margin-bottom: 80px;
+          overflow: hidden;
+
+            img {
+                width: 100%;
+                display: inline-block;
+            }
+
+            .content_text {
+                overflow: hidden;
+                padding-left: 0px;
+                display: inline-block;
+                
+                img{
+                    margin-top: 20px;
+                    display: block;
+                    margin-bottom: 40px;
+
+                }
+                .number_logo{
+                    width:10%;
+                    
+                }
+                .number_logo_size{
+                    width: 13%;
+                }
+                h3 {
+
+                    font-size: 17px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    text-align: left;
+                    letter-spacing: 1px;
+                    line-height: 18px;
+                    font-size: 12px;
+                }
+            }
+
+            .order_content_text {
+                padding-left: 0px;
+                padding-right: 50px;
+                order:2;
+                
+            }
+            .img_order{
+            
+                order:1;
+            }
+
+        }
+        
+    }
+    
+
+    .over_relative{
+        position: relative;
+        margin: 0 auto;
+ 
+        width: 100%;
+       height: 0px;
+    
+    .business_white{
+        position: absolute;
+        top:-90px;
+        right:25px;
+        text-align: left;
+        display: block;
+        width: 14%;
+       
+    
+    }
+    }
+
+}
+
+.left_fadein{
+   opacity: 0;
+   transform:translateX(-110px) ;
+   transition: 1.2s;
+}
+.right_fadein{
+    opacity: 0;
+    transform:translateX(110px) ;
+    transition: 1.2s;
+   
+
+
+ }
+
+
+.scrollin{
+    opacity: 1;
+    transform:translateX(0px) ;
+  
+}
+
+.latestnews{
+
+    
+  overflow: hidden;
+  
+    width: 100%;
+   background-image: url("../img/unique_material_newsback.jpg");
+   
+    color:rgb(255, 255, 255);
+    .back_filter{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        .container{
+          
+            width: 100%;
+            margin: 0   auto;
+    
+        .sectionname{
+            margin: 0   auto;
+            width: 90%;
+           
+            img{
+                display: block;
+                width: 80%;
+               
+                margin-bottom: 12px;
+            }
+        
+        }
+        .sectionname_japanese{
+            margin: 0   auto;
+            width: 90%;
+           
+            font-size:14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+    
+    .blog{
+        width: 100%;
+        border-top: 1px solid   white;
+        font-size: 12px;
+        font-weight: 600;
+        li{
+            
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border-bottom:1px solid white ;
+            line-height: 20px;
+            letter-spacing:2px;
+            
+            .parent{
+              
+                width: 90%;
+                margin: 0 auto;
+            .day{
+                display: inline-block;
+            }
+            .category{
+                display: inline-block;
+            }
+            .article_content{
+                width: 100%;
+                overflow: hidden;
+                display: block;
+             
+              
+            }
+        }
+        }
+    }
+}
+
+.over_relative{
+    position: relative;
+    margin: 0 auto;
+
+    width: 100%;
+   height: 0px;
+
+.news_white{
+    position: absolute;
+    top:40px;
+    right:25px;
+    text-align: left;
+    display: block;
+    width: 14%;
+    
+
+}
+}
+}
+}
+
+.companyprofile{
+    overflow: hidden;
+    width: 100%;
+ 
+    background-color: rgb(255, 255, 255);
+    padding-top: 90px;
+    padding-bottom: 40px;
+    color:#0099FF;
+    .container{
+        //background-color: pink;
+        width: 90%;
+        margin: 0   auto;
+
+    .sectionname{
+    
+       
+        width: 100%;
+        
+        img{
+            display: block;
+            width: 100%;
+           
+            margin-bottom: 12px;
+        }
+    }
+    .sectionname_japanese{
+        font-size:14px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .conpanyinfo{
+        width: 100%;
+        font-size: 12px;
+        border-top: 1px solid  #0099FF ;
+        line-height: 18px;
+        letter-spacing: 1px;
+
+dl{
+    //dlでflex使ってdtだけpaqdding-top,bottom加え高さ揃えた
+    border-bottom: 1px solid #0099FF ;
+    align-items: center;
+    display: flex;
+    dt{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:#D1EDFA;
+        
+        width:20%;
+        text-align: center;
+        display: inline-block;
+        font-weight: 600;
+
+    }
+    dd{
+      //  background-color: pink;
+      
+        width: 80%;
+        display: inline-block;
+        padding-left: 20px;
+        font-weight: 600;
+    }
+    .space_dt{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+    }
+
+
+
+
+
+}
+.over_relative{
+    position: relative;
+    margin: 0 auto;
+
+    width: 100%;
+   height: 0px;
+
+.company_white{
+    position: absolute;
+    top:50px;
+    right:40px;
+    text-align: left;
+    display: block;
+    width: 5%;
+    margin-left: 90%;
+
+}
+}
+}
+footer{
+overflow: hidden;
+    width: 100%;
+   font-size: 12px;
+
+   background-image: url("../img/guladeshion_back.jpg");
+    
+    text-align: left;
+    color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+.container{
+   // background-color:pink;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0   auto;
+    .sectionname{
+       width: 40%;
+        text-align: left;
+        img{
+            display: block;
+            width: 100%;
+         
+            margin-bottom: 12px;
+        }
+    }
+    .sectionname_japanese{
+        font-size:14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .contact_message{
+        font-weight: 600;
+    }
+
+    .mail{
+        text-align: center;
+        display: block;
+        font-size: 9px;
+        margin: 0 auto;
+        background-color:rgb(255, 255, 255) ;
+        color:#0099FF ;
+       width: 100%;
+       font-weight: 600;
+       margin-top: 20px;
+     padding-bottom: 15px;
+     padding-top: 15px;
+    }
+    .ul_snsicon{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 17px;
+
+        .sns_icon{
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+          
+            img{
+                display: inline-block;
+                width: 100%;
+            }
+            
+        }
+    }
+
+
+p{
+    display: block;
+    text-align: center;
+    
+}
+    nav{
+        font-weight: 780;
+        display: none;
+        li{
+            background-color: rgb(255, 255, 255);
+            color:#0099FF ;
+           border: 3px solid blue;
+        }
+    }
+}
+.over_relative{
+    position: relative;
+    margin: 0 auto;
+
+    width: 100%;
+   height: 0px;
+img{
+    position: absolute;
+    top:-80px;
+    right:25px;
+    text-align: left;
+  
+    width: 14%;
+   
+
+}
+}
+}
+    
+}
